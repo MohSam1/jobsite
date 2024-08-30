@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job and Profile System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Job</span> and Profile System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#jobs">Jobs</a></li>
+                    <li><a href="#profiles">Profiles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="home" class="page active">
+            <section id="showcase">
+                <div class="container">
+                    <h1>Find Your Dream Job</h1>
+                    <p>Connect with top employers and showcase your skills</p>
+                </div>
+            </section>
+        </div>
+
+        <div id="jobs" class="page">
+            <h2>Available Jobs</h2>
+            <div id="jobList"></div>
+        </div>
+
+        <div id="profiles" class="page">
+            <h2>Professional Profiles</h2>
+            <div id="profileList"></div>
+        </div>
+
+        <div id="admin" class="page">
+            <h2>Admin Panel</h2>
+            <h3>Create Profile</h3>
+            <form id="profileForm">
+                <input type="text" id="profileName" placeholder="Name" required>
+                <input type="email" id="profileEmail" placeholder="Email" required>
+                <input type="text" id="profileSkills" placeholder="Skills (comma-separated)" required>
+                <button type="submit">Create Profile</button>
+            </form>
+            
+            <h3>Create Job</h3>
+            <form id="jobForm">
+                <input type="text" id="jobTitle" placeholder="Job Title" required>
+                <input type="text" id="jobCompany" placeholder="Company" required>
+                <input type="text" id="jobSkills" placeholder="Required Skills (comma-separated)" required>
+                <button type="submit">Create Job</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
