@@ -1,3 +1,4 @@
+// script.js
 let profiles = [];
 let jobs = [];
 
@@ -56,6 +57,19 @@ function updateJobList() {
         </div>
     `).join('');
 }
+
+// Contact form submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('contactName').value;
+    const email = document.getElementById('contactEmail').value;
+    const message = document.getElementById('contactMessage').value;
+    
+    // Here you would typically send this data to a server
+    console.log('Contact form submitted:', { name, email, message });
+    alert('Thank you for your message. We will get back to you soon!');
+    this.reset();
+});
 
 // Initialize with some sample data
 profiles.push(

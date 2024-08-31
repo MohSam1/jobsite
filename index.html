@@ -1,10 +1,11 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job and Profile System</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,6 +18,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#jobs">Jobs</a></li>
                     <li><a href="#profiles">Profiles</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,6 +32,29 @@
                     <p>Connect with top employers and showcase your skills</p>
                 </div>
             </section>
+            <section id="features">
+                <div class="feature">
+                    <img src="/api/placeholder/300/200" alt="Feature 1">
+                    <h3>Discover Opportunities</h3>
+                    <p>Browse through a wide range of job openings across various industries.</p>
+                </div>
+                <div class="feature">
+                    <img src="/api/placeholder/300/200" alt="Feature 2">
+                    <h3>Showcase Your Skills</h3>
+                    <p>Create a professional profile to highlight your expertise and experience.</p>
+                </div>
+                <div class="feature">
+                    <img src="/api/placeholder/300/200" alt="Feature 3">
+                    <h3>Connect with Employers</h3>
+                    <p>Directly interact with potential employers and explore new career paths.</p>
+                </div>
+            </section>
+            <section id="video">
+                <h2>How It Works</h2>
+                <div class="video-container">
+                    <img src="/api/placeholder/640/360" alt="Video Placeholder">
+                </div>
+            </section>
         </div>
 
         <div id="jobs" class="page">
@@ -40,6 +65,16 @@
         <div id="profiles" class="page">
             <h2>Professional Profiles</h2>
             <div id="profileList"></div>
+        </div>
+
+        <div id="contact" class="page">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="contactName" placeholder="Your Name" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
 
         <div id="admin" class="page">
@@ -61,6 +96,11 @@
             </form>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Job and Profile System. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
