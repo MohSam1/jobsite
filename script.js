@@ -21,7 +21,7 @@ document.getElementById('profileForm').addEventListener('submit', function(e) {
     const name = document.getElementById('profileName').value;
     const email = document.getElementById('profileEmail').value;
     const skills = document.getElementById('profileSkills').value.split(',').map(skill => skill.trim());
-    
+
     profiles.push({ name, email, skills });
     updateProfileList();
     this.reset();
@@ -32,7 +32,7 @@ document.getElementById('jobForm').addEventListener('submit', function(e) {
     const title = document.getElementById('jobTitle').value;
     const company = document.getElementById('jobCompany').value;
     const requiredSkills = document.getElementById('jobSkills').value.split(',').map(skill => skill.trim());
-    
+
     jobs.push({ title, company, requiredSkills });
     updateJobList();
     this.reset();
@@ -64,7 +64,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const name = document.getElementById('contactName').value;
     const email = document.getElementById('contactEmail').value;
     const message = document.getElementById('contactMessage').value;
-    
+
     // Here you would typically send this data to a server
     console.log('Contact form submitted:', { name, email, message });
     alert('Thank you for your message. We will get back to you soon!');
